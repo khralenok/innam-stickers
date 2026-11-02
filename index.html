@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f8f8f1">
+  <meta name="description" content="A little Innam for every conversation. Explore the full collection of 20 INNAM stickers.">
+  <title>INNAM — Sticker pack</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <main>
+    <h1 class="visually-hidden">INNAM sticker gallery</h1>
+    <div class="gallery-instructions">
+      <span>Выбери стикер, чтоб приблизить</span>
+    </div>
+
+    <div class="gallery">
+      <section class="preview-panel" aria-label="Selected sticker">
+        <div class="preview-stage" id="preview-stage" aria-busy="false">
+          <img id="preview-image" src="assets/previews/01-xin-chao.webp" alt="Синь чао — smiling Innam mascot waving hello" width="900" height="900" fetchpriority="high">
+          <span id="image-error" class="image-error" hidden>Couldn’t load this sticker. Try selecting it again.</span>
+        </div>
+        <div class="preview-details">
+          <div class="selected-caption" aria-live="polite" aria-atomic="true"><h2 id="preview-title" lang="ru">Синь чао</h2></div>
+          <div class="navigation"><button type="button" id="previous" class="arrow-button" aria-label="Previous sticker"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m14 6-6 6 6 6"/></svg></button><button type="button" id="next" class="arrow-button" aria-label="Next sticker"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m10 6 6 6-6 6"/></svg></button></div>
+        </div>
+      </section>
+
+      <section class="collection-panel" aria-label="Sticker collection">
+        <div id="sticker-grid" class="sticker-grid"></div>
+      </section>
+    </div>
+    <noscript><p class="noscript">Enable JavaScript to browse the collection. You can also <a href="src/01-xin-chao.png">view the first sticker</a>.</p></noscript>
+  </main>
+</body>
+</html>
